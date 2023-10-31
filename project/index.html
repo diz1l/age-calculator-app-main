@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="den_rozhdenia">
+        <div class="column">
+          <!-- required -->
+          <label for="day" id="dayLabel">Day</label>
+          <input type="text" id="day" value="24" class="day" required  /> 
+          <p type="text" id="day_is_required" class="is_required" required>Day is required</p>
+        </div>
+        <div class="column">
+          <label for="month" id="monthLabel">Month</label>
+          <input type="text" id="month" value="09" class="month" required  />
+          <p type="text" id="month_is_required" class="is_required" required>Month is required</p>
+        </div>
+        <div class="column">
+          <label for="year" id="yearLabel">Year</label>
+          <input type="text" id="year" value="1984" class="year" required  />
+          <p type="text" id="year_is_required" class="is_required" required>Year is required</p>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="time_spend">
+        <div class="roww">
+          <label for="year_spend" id="year_spend">26</label>
+          <div class="year_spend">years</div>
+        </div>
+        <div class="roww">
+          <label for="month_spend" id="month_spend">3</label>
+          <div class="month_spend">months</div>
+        </div>
+        <div class="roww">
+          <label for="day_spend" id="day_spend">38</label>
+          <div class="day_spend">days</div>
+        </div>
+      </div>
+    </div>
+    <script src="/project/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@200&family=Montserrat:wght@200;400;600&family=The+Nautigal:wght@700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,800&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+*,
+* ::after,
+* ::before {
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'Fraunces', serif; */
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Off-white: hsl(0, 0%, 94%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --Off-black: hsl(0, 0%, 8%);
+    --Purple: hsl(259, 100%, 65%);
+    --Light-red: hsl(0, 100%, 67%);
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--Off-white);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+}
+
+.wrapper {
+    width: 800px;
+    height: 500px;
+    background-color: var(--White);
+    /* border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 150px; */
+    border-radius: 20px 20px 150px 20px;
+}
+
+.divider {
+    border-top: 1px solid var(--Light-grey);
+    /* 1px черная горизонтальная линия */
+    margin: 0px 80px 0px 80px;
+    /* padding: 10px; */
+
+}
+
+.den_rozhdenia {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: center;
+    padding: 40px 0px 30px 80px;
+    gap: 20px;
+}
+
+.column {
+    text-align: left;
+    display: grid;
+    gap: 5px;
+}
+
+input.day,
+input.month,
+input.year {
+    width: 110px;
+    border: 1px solid var(--Light-grey);
+    /* 1px рамка, черного цвета */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.time_spend {
+    display: grid;
+    align-items: center;
+    justify-content: left;
+    text-align: center;
+    font-size: 75px;
+    font-weight: bold;
+    padding: 0px 0px 0px 80px;
+}
+
+.roww {
+    display: flex;
+    gap: 10px;
+}
+
+.column label {
+    font-weight: bold;
+    /* Сделать текст жирным */
+    color: var(--Smokey-grey);
+    font-size: 14px;
+}
+
+.column input {
+    font-weight: bold;
+    /* Сделать значение внутри элемента <input> жирным */
+}
+
+.roww label {
+    color: var(--Purple);
+}
+
+input:invalid {
+    box-shadow: 0px 0px 5px -1px var(--Light-red)
+  }
+  
+  .is_required {
+    display: none;
+    color: var(--Light-red);
+  }
+  
+
+#dayLabel {
+    color: var(--Off-black); 
+  }
+  
+  #dayLabel.required {
+    color: var(--Light-red) 
+  }
+
+  #monthLabel {
+    color: var(--Off-black); 
+  }
+  
+  #monthLabel.required {
+    color: var(--Light-red) 
+  }
+
+
+  #yearLabel {
+    color: var(--Off-black); 
+  }
+  
+  #yearLabel.required {
+    color: var(--Light-red) 
+  }
+
+
+
+  
